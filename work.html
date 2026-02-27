@@ -22,21 +22,73 @@
   </nav>
 </header>
 
-<section class="portfolio">
-  <h2>Portfolio / Work</h2>
-  <div class="portfolio-grid">
-    <img src="images/work1.jpg" alt="">
-    <img src="images/work2.jpg" alt="">
-    <img src="images/work3.jpg" alt="">
-    <img src="images/work4.jpg" alt="">
-    <img src="images/work5.jpg" alt="">
-    <img src="images/work6.jpg" alt="">
+<!-- section starts -->
+ <section class="work-page">
+  <div class="container">
+    <h1 class="page-title">Our Work</h1>
+
+    <!-- CATEGORY FILTER BUTTONS -->
+    <div class="category-filters">
+      <button class="filter-btn active" data-category="all">All</button>
+      <button class="filter-btn" data-category="portrait">Portrait</button>
+      <button class="filter-btn" data-category="bridal">Bridal</button>
+      <button class="filter-btn" data-category="events">Events</button>
+      <button class="filter-btn" data-category="studio">Studio</button>
+    </div>
+
+    <!-- PORTRAIT -->
+    <div class="category-section" data-category="portrait" id="portrait">
+      <h3>Portrait / Headshots</h3>
+      <div class="scroll-row">
+        <img src="images/portrait1.jpg" alt="">
+        <img src="images/portrait2.jpg" alt="">
+        <img src="images/portrait3.jpg" alt="">
+        <img src="images/portrait4.jpg" alt="">
+        <img src="images/portrait5.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- BRIDAL -->
+    <div class="category-section" data-category="bridal" id="bridal">
+      <h3>Bridal / Wedding</h3>
+      <div class="scroll-row">
+        <img src="images/bridal1.jpg" alt="">
+        <img src="images/bridal2.jpg" alt="">
+        <img src="images/bridal3.jpg" alt="">
+        <img src="images/bridal4.jpg" alt="">
+        <img src="images/bridal5.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- EVENTS -->
+    <div class="category-section" data-category="events" id="events">
+      <h3>Events</h3>
+      <div class="scroll-row">
+        <img src="images/event1.jpg" alt="">
+        <img src="images/event2.jpg" alt="">
+        <img src="images/event3.jpg" alt="">
+        <img src="images/event4.jpg" alt="">
+        <img src="images/event5.jpg" alt="">
+      </div>
+    </div>
+
+    <!-- STUDIO -->
+    <div class="category-section" data-category="studio" id="studio">
+      <h3>Studio Photography</h3>
+      <div class="scroll-row">
+        <img src="images/studio1.jpg" alt="">
+        <img src="images/studio2.jpg" alt="">
+        <img src="images/studio3.jpg" alt="">
+        <img src="images/studio4.jpg" alt="">
+        <img src="images/studio5.jpg" alt="">
+      </div>
+    </div>
+
   </div>
-  
 </section>
 
 <footer class="footer">
-  <p>© 2026 John Lens Photography</p>
+  <p>© 2026 Afoglo Photography</p>
   <p>Built by John Owolabi</p>
 </footer>
 <script src="js/navbar.js"></script>
