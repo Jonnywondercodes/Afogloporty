@@ -190,6 +190,7 @@ img {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  /* linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), */
 }
 
 .hero h1 {
@@ -201,7 +202,7 @@ img {
 
 .hero p {
   color: #B0C4DE;
-  line-height: 1,6;
+  line-height: 1, 6;
   font-size: 1.2rem;
   margin: 1rem 0 2rem;
 }
@@ -237,10 +238,9 @@ img {
   font-weight: bold;
   background: transparent;
   border: none;
-  color:#000;
+  color: #000;
   background-color: #ff5f1f;
   transition: 0.55s ease;
-
 }
 
 .btn-outline:hover {
@@ -264,10 +264,24 @@ section h2 {
 
 /* ================= ABOUT ================= */
 .about-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
   gap: 3rem;
   align-items: center;
+}
+
+.about-image {
+  max-width: 380px;
+  max-height: 420px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  object-fit: cover;
+
 }
 
 .about-text p {
@@ -557,9 +571,19 @@ section h2 {
 /* ================= RESPONSIVE ================= */
 @media (max-width: 768px) {
   .about-container {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    text-align: center;
   }
-
+.about-image{
+  max-width: 260px;
+  max-height: 300px;
+}
+.about-text{
+  order: 2;
+}
+.about-image{
+  order: 1;
+}
   .hero h2 {
     font-size: 2.2rem;
   }
