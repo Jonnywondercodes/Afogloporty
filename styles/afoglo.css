@@ -51,7 +51,7 @@ img {
   font-weight: 500;
   color: #6b7280;
   text-decoration: none;
-  transition: 0.6s ease;
+  transition: 0.3s ease;
 }
 
 .nav-links a:hover {
@@ -64,6 +64,7 @@ img {
   border-radius: 20px;
   color: #2563eb;
 }
+
 /* ================= DROPDOWN ================= */
 .dropdown {
   position: relative;
@@ -72,11 +73,13 @@ img {
 .dropdown-menu {
   display: none;
   position: absolute;
-  top: 35px; /* below the parent */
+  top: 35px;
+  /* below the parent */
   left: 0;
-  background: #ffffff; /* same as navbar */
+  background: #ffffff;
+  /* same as navbar */
   min-width: 180px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   overflow: hidden;
   z-index: 1000;
@@ -89,12 +92,14 @@ img {
 .dropdown-menu li a {
   display: block;
   padding: 0.8rem 1rem;
-  color: #1f2933; /* text color */
+  color: #1f2933;
+  /* text color */
   font-size: 0.9rem;
 }
 
 .dropdown-menu li a:hover {
-  background: #2563eb; /* accent color */
+  background: #2563eb;
+  /* accent color */
   color: #ffffff;
   transition: all 0.3s ease;
 }
@@ -103,6 +108,7 @@ img {
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 /* ================= MOBILE NAVBAR ================= */
 .mobile-menu-toggle {
   display: none;
@@ -119,7 +125,8 @@ img {
     right: 0;
     background: #ffffff;
     flex-direction: column;
-    display: none; /* hidden initially */
+    display: none;
+    /* hidden initially */
     border-top: 1px solid #e5e7eb;
     z-index: 1000;
   }
@@ -168,29 +175,35 @@ img {
     text-align: center;
   }
 }
+
 /* ================= HERO ================= */
 .hero {
-  min-height: 85vh;
+  position: relative;
+  min-height: 90vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 3rem 2rem;
-  background: #ffffff;
+  /* padding: 3rem 2rem; */
+
+  background-image: url("/images/na-ww6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-.hero-content {
-  max-width: 700px;
-}
-
-.hero h2 {
+.hero h1 {
+  color: #FDFDFD;
   font-size: 3rem;
   margin-bottom: 1rem;
+  text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 .hero p {
-  color: #6b7280;
-  margin-bottom: 2rem;
+  color: #B0C4DE;
+  line-height: 1,6;
+  font-size: 1.2rem;
+  margin: 1rem 0 2rem;
 }
 
 .hero-buttons {
@@ -199,28 +212,43 @@ img {
   gap: 1rem;
 }
 
-/* Buttons */
-.btn {
-  padding: 0.85rem 1.9rem;
-  background: #2563eb;
-  color: #ffffff;
-  border-radius: 30px;
-  text-decoration: none;
-  font-size: 0.9rem;
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  /* dark overlay */
 }
 
-.btn:hover {
-  background: #1e40af;
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  padding: 0 1rem;
 }
+
+/* Buttons */
 
 .btn-outline {
+  padding: 0.85rem 1.9rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
   background: transparent;
-  border: 1px solid #2563eb;
-  color: #2563eb;
+  border: none;
+  color:#000;
+  background-color: #ff5f1f;
+  transition: 0.55s ease;
+
 }
-.btn-outline:hover{
+
+.btn-outline:hover {
+  background: #E64A19;
   color: white;
+  border: none;
 }
+
 /* ================= SECTIONS ================= */
 section {
   max-width: 1200px;
@@ -233,6 +261,7 @@ section h2 {
   margin-bottom: 3rem;
 }
 
+
 /* ================= ABOUT ================= */
 .about-container {
   display: grid;
@@ -244,6 +273,7 @@ section h2 {
 .about-text p {
   color: #6b7280;
 }
+
 /* ================= SELECTED WORK SCROLL ================= */
 .selected-work {
   padding: 4rem 2rem;
@@ -258,12 +288,6 @@ section h2 {
 
 .section-header h2 {
   font-size: 2rem;
-}
-
-.view-all {
-  font-size: 0.95rem;
-  color: #2563eb;
-  text-decoration: none;
 }
 
 .work-scroll {
@@ -298,6 +322,7 @@ section h2 {
 .work-scroll img:hover {
   transform: scale(1.04);
 }
+
 /* ================= SCROLL WRAPPER ================= */
 .work-scroll-wrapper {
   position: relative;
@@ -320,7 +345,7 @@ section h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: all 0.25s ease;
   z-index: 10;
 }
@@ -336,6 +361,7 @@ section h2 {
     display: none;
   }
 }
+
 /* ================= CATEGORY TAGS ================= */
 .tag {
   position: absolute;
@@ -353,11 +379,13 @@ section h2 {
 .tag:hover {
   background: #2563eb;
 }
+
 /* ================= SELECTED WORK IMAGE SIZING ================= */
 .work-card {
   position: relative;
   flex-shrink: 0;
-  width: calc((100vw - 6rem) / 3); /* 3 images on desktop */
+  width: calc((100vw - 6rem) / 3);
+  /* 3 images on desktop */
   max-width: 360px;
 }
 
@@ -381,6 +409,7 @@ section h2 {
     width: 85vw;
   }
 }
+
 /* style for work.html */
 .work-gallery {
   display: grid;
@@ -411,12 +440,13 @@ section h2 {
   position: absolute;
   bottom: 12px;
   left: 12px;
-  background: rgba(0,0,0,0.6);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   padding: 5px 10px;
   border-radius: 20px;
   font-size: 0.8rem;
 }
+
 /* ================= CATEGORY FILTER BUTTONS ================= */
 .category-filters {
   display: flex;
@@ -431,9 +461,10 @@ section h2 {
   background-color: #ffffff;
   color: #2563eb;
   border-radius: 25px;
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   cursor: pointer;
   transition: all 0.25s ease;
+  font-weight: 500;
 }
 
 .filter-btn:hover {
@@ -445,6 +476,7 @@ section h2 {
   background-color: #2563eb;
   color: #ffffff;
 }
+
 /* ================= PORTFOLIO ================= */
 .portfolio-grid {
   display: grid;
