@@ -105,8 +105,7 @@ img {
   }
 }
 
-
-/* ================= HERO ================= */
+/* HERO*/
 .hero {
   position: relative;
   min-height: 70vh;
@@ -114,12 +113,6 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  /* padding: 3rem 2rem; */
-
-  background:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("/images/bg-image.webp") center / cover no-repeat;
-
 }
 
 .hero h1 {
@@ -131,7 +124,7 @@ img {
 
 .hero p {
   color: #B0C4DE;
-  line-height: 1, 6;
+  line-height: 1.6;
   font-size: 1.2rem;
   margin: 1rem 0 2rem;
 }
@@ -140,14 +133,6 @@ img {
   display: flex;
   justify-content: center;
   gap: 1rem;
-}
-
-.hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.55);
-  /* dark overlay */
 }
 
 .hero-content {
@@ -217,7 +202,35 @@ section h2 {
   color: #6b7280;
 }
 
-/* ================= SELECTED WORK SCROLL ================= */
+/* RESPONSIVE for About */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-image {
+    max-width: 260px;
+    max-height: 300px;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+  }
+
+  .hero h2 {
+    font-size: 2.2rem;
+  }
+
+  .nav-links {
+    gap: 1.2rem;
+  }
+}
+/*SELECTED WORK SCROLL*/
 .selected-work {
   padding: 4rem 2rem;
 }
@@ -262,7 +275,7 @@ section h2 {
 }
 
 
-/* ================= CATEGORY TAGS ================= */
+/*CATEGORY TAGS*/
 .tag {
   position: absolute;
   bottom: 12px;
@@ -281,7 +294,7 @@ section h2 {
   font-weight: bold;
 }
 
-/* ================= SELECTED WORK IMAGE SIZING ================= */
+/*SELECTED WORK IMAGE SIZING*/
 .work-card {
   position: relative;
   flex-shrink: 0;
@@ -311,24 +324,13 @@ section h2 {
   }
 }
 
-/* ================= PORTFOLIO ================= */
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 1.5rem;
-}
-
-.portfolio-grid img {
-  border: 2px solid;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-}
+/*PORTFOLIO*/
 
 .portfolio-grid img:hover {
   transform: scale(1.05);
 }
 
-/* ================= SERVICES ================= */
+/*SERVICES*/
 .services {
   background: #ffffff;
 }
@@ -370,7 +372,7 @@ section h2 {
   transition: 0.3s ease;
 }
 
-/* ================= CONTACT ================= */
+/*CONTACT*/
 .contact-form {
   max-width: 500px;
   margin: auto;
@@ -399,7 +401,7 @@ section h2 {
   font-size: 1.2rem;
 }
 
-/* ================= FOOTER ================= */
+/*FOOTER*/
 .site-footer {
   background: #0f0f0f;
   color: #eaeaea;
@@ -490,42 +492,5 @@ section h2 {
     flex-direction: column;
     gap: 0.6rem;
     text-align: center;
-  }
-}
-
-/* ================= RESPONSIVE ================= */
-@media (max-width: 768px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-image {
-    max-width: 260px;
-    max-height: 300px;
-  }
-
-  .about-text {
-    order: 2;
-  }
-
-  .about-image {
-    order: 1;
-  }
-
-  .hero h2 {
-    font-size: 2.2rem;
-  }
-
-  .nav-links {
-    gap: 1.2rem;
-  }
-}
-
-/* MOBILE */
-@media (max-width: 768px) {
-  .scroll-row img {
-    width: 240px;
-    height: 320px;
   }
 }
