@@ -5,12 +5,15 @@
 }
 
 body {
-  font-family: 'Inter', sans-serif;
-  background: #fafafa;
-  color: #1f2933;
-  line-height: 1.6;
+ font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  font-weight: 400;
 }
-
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
 img {
   /* width: 100%; */
   display: block;
@@ -230,6 +233,33 @@ section h2 {
     gap: 1.2rem;
   }
 }
+.inspiration {
+  padding: 100px 5%;
+  background-color: #fafafa;
+}
+
+.inspiration-text {
+  max-width: 1024px;
+  font-size: 1.15rem;
+  line-height: 1.7;
+  margin-bottom: 50px;
+  color: #444;
+  text-align:center;
+}
+
+.inspiration-card {
+  padding: 35px;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  transition: all 0.3s ease;
+  background: white;
+  margin-bottom: 10px;
+}
+
+.inspiration-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
 /*SELECTED WORK SCROLL*/
 .selected-work {
   padding: 4rem 2rem;
@@ -333,6 +363,7 @@ section h2 {
 /*SERVICES*/
 .services {
   background: #ffffff;
+  margin-top: -60px;
 }
 
 /* desktop */
