@@ -252,7 +252,7 @@ section h2 {
   border: 1px solid #eaeaea;
   border-radius: 16px;
   transition: all 0.3s ease;
-  background: white;
+  background: rgb(245, 244, 244);
   margin-bottom: 10px;
 }
 
@@ -263,6 +263,7 @@ section h2 {
 /*SELECTED WORK SCROLL*/
 .selected-work {
   padding: 4rem 2rem;
+  margin-top: -6%;
 }
 
 .section-header h2 {
@@ -363,7 +364,8 @@ section h2 {
 /*SERVICES*/
 .services {
   background: #ffffff;
-  margin-top: -60px;
+  padding-top: 20px;
+margin-top: -60px;
 }
 
 /* desktop */
@@ -371,6 +373,7 @@ section h2 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+  margin-top: ;
 }
 
 /* tablet */
@@ -404,6 +407,9 @@ section h2 {
 }
 
 /*CONTACT*/
+.contact{
+  margin-top: -7%;
+}
 .contact-form {
   max-width: 500px;
   margin: auto;
@@ -437,6 +443,7 @@ section h2 {
   background: #0f0f0f;
   color: #eaeaea;
   padding: 4rem 1.5rem 2rem;
+  margin-top: -4%;
 }
 
 .footer-container {
