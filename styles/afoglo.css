@@ -430,6 +430,11 @@ margin-top: -20%;  }
   margin-top: 50px;
 }
 @media (max-width: 768px){
+  .contact-options{
+     display: flex;
+  justify-content: center;
+  gap: 20px;
+  }
   .contact-card{
      width: 70px;
   height: 70px;
