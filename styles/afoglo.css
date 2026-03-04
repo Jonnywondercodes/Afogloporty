@@ -263,9 +263,13 @@ section h2 {
 /*SELECTED WORK SCROLL*/
 .selected-work {
   padding: 4rem 2rem;
-  margin-top: -6%;
+  margin-top: -7%;
 }
-
+@media (max-width: 768px) {
+  .selected-work{
+    margin-top: -20%;
+  }
+}
 .section-header h2 {
   margin-top: 12px;
   font-size: 2rem;
@@ -405,39 +409,66 @@ margin-top: -60px;
   transform: translateY(-6px);
   transition: 0.3s ease;
 }
-
-/*CONTACT*/
-.contact{
-  margin-top: -7%;
+/* Contact css */
+.contact {
+  padding: 100px 5%;
+  text-align: center;
+  margin-top: -8%;
 }
-.contact-form {
-  max-width: 500px;
-  margin: auto;
+@media (max-width: 768px){
+  .contact{
+margin-top: -20%;  }
+}
+.contact-options {
   display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.contact-card {
+  width: 90px;
+  height: 80px;
+  /* border: 2px solid #9a9393; */
+
+  border-radius: 16px;
+  display: flex;
+  gap: -10px;
   flex-direction: column;
-  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color:white;
+  transition: 0.3s ease;
+  background:#0f0f0f ;
 }
 
-.contact-form input,
-.contact-form textarea {
-  padding: 0.8rem;
-  background: #ffffff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  color: #1f2933;
-  font-size: 1.2rem;
+.contact-card i {
+  font-size: 24px;
+  margin-bottom: 10px;
 }
 
-.contact-form button {
-  background: #2563eb;
-  border: none;
-  padding: 0.8rem;
-  border-radius: 8px;
-  color: #ffffff;
-  cursor: pointer;
-  font-size: 1.2rem;
+.contact-card span {
+  font-size: 1rem;
+  font-weight: 500;
 }
 
+.contact-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+.contact-card:nth-child(1):hover i {
+  color: #25D366; /* WhatsApp */
+}
+
+.contact-card:nth-child(2):hover i {
+  color: #E1306C; /* Instagram */
+}
+
+.contact-card:nth-child(3):hover i {
+  color: #D44638; /* Gmail */
+}
 /*FOOTER*/
 .site-footer {
   background: #0f0f0f;
@@ -445,7 +476,11 @@ margin-top: -60px;
   padding: 4rem 1.5rem 2rem;
   margin-top: -4%;
 }
-
+@media (max-width: 768px){
+  .site-footer{
+    margin-top:-10% ;
+  }
+}
 .footer-container {
   max-width: 1200px;
   margin: auto;
