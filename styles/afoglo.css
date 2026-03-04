@@ -234,8 +234,12 @@ section h2 {
   }
 }
 .inspiration {
-  padding: 100px 5%;
+  padding-right:5%;
+  padding-left:5%;
+  padding-bottom:80px ;
+ padding-top:8px ;
   background-color: #fafafa;
+  margin-top: -3%;
 }
 
 .inspiration-text {
@@ -377,7 +381,6 @@ margin-top: -60px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
-  margin-top: ;
 }
 
 /* tablet */
@@ -426,12 +429,15 @@ margin-top: -20%;  }
   flex-wrap: wrap;
   margin-top: 50px;
 }
-
+@media (max-width: 768px){
+  .contact-card{
+     width: 70px;
+  height: 70px;
+  }
+}
 .contact-card {
   width: 90px;
   height: 80px;
-  /* border: 2px solid #9a9393; */
-
   border-radius: 16px;
   display: flex;
   gap: -10px;
