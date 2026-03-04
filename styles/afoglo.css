@@ -151,6 +151,7 @@ img {
   max-width: 700px;
   padding: 0 1rem;
 }
+
 /* Buttons */
 
 .btn-outline {
@@ -587,3 +588,4 @@ section h2 {
       text-align: center;
     }
   }
+}
