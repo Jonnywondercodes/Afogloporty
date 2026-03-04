@@ -420,7 +420,7 @@ margin-top: -60px;
 }
 @media (max-width: 768px){
   .contact{
-margin-top: -20%;  }
+margin-top: -30%;  }
 }
 .contact-options {
   display: flex;
@@ -431,13 +431,14 @@ margin-top: -20%;  }
 }
 @media (max-width: 768px){
   .contact-options{
-     display: flex;
-  justify-content: center;
-  gap: 20px;
+    display: flex;
+    flex-direction: row;
+  gap: 10px;
+
   }
   .contact-card{
-     width: 70px;
-  height: 70px;
+     width: 50px;
+  height: 50px;
   }
 }
 .contact-card {
